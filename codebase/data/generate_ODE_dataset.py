@@ -1,7 +1,12 @@
 """Based on https://github.com/ethanfetaya/NRI (MIT License)."""
 
+import os, sys
+root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if root not in sys.path:
+    sys.path.append(root)
+
 import numpy as np
-import os
+
 import time
 import argparse
 
