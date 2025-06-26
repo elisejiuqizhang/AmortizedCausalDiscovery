@@ -16,18 +16,18 @@ With Amortized Causal Discovery, we separate causal relation prediction from dyn
 Our amortized encoder learns to infer causal relations across samples with different underlying graphs. 
 Our decoder learns to model the shared dynamics of the predicted relations. 
 
-<p align="center"> 
+<!-- <p align="center"> 
     <img src="./media/ACD.svg" width="800">
-</p>
+</p> -->
 
 This separation allows us to train a joint model for samples with different underlying causal graphs. 
 This is in contrast to previous approaches, which need to refit a new model whenever they encounter samples with a different underlying causal graph.
 
 What we found exciting is that this allows us to achieve tremendous improvements in causal inference performance with increasing training data size. Amortized Causal Discovery (ACD) manages to outperform previous causal discovery approaches with as little as 50 training samples; with 50.000 samples it outperforms them by more than 30% points.
 
-<p align="center"> 
+<!-- <p align="center"> 
     <img src="./media/AUROC_kuramoto.svg" width="700">
-</p>
+</p> -->
 
 ## How to run the code
 
